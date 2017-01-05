@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+<head>
+<title>Create a speech bubble shape with CSS3.</title>
+<style>
+.speechbubble {
+    background: aqua;
+    border-radius: 20px;
+    height: 86px;
+    margin-left: 20px;
+    padding: 10px;
+    position: relative;
+    width: 158px;
+}
+.speechbubble::before {
+    border-bottom: 13px solid transparent;
+    border-right: 30px solid aqua;
+    border-top: 18px solid transparent;
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 18px;
+   
+}
+</style>
+</head>
+<body>
+<div class="speechbubble"></div>
+</body>
+</html>
